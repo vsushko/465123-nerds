@@ -34,44 +34,48 @@
         <aside class="customize-left-column">
             <form action="https://echo.htmlacademy.ru" method="post" oninput="torange.value = costs.valueAsNumber">
                 <div class="site-type-filters">
-                    <h3 class="site-costs">Стоимость</h3>
-                    <input type="range" id="costs" min="0" value="15000" max="20000" step="1000">
-                    <input type="text" id="fromrange" value="0">
-                    <input type="text" id="torange" value="15000">
-
-                    <h3 class="site-type-header">Сетка:</h3>
-                    <input id="adaptive" name="adaptive" type="checkbox" value="adaptive" checked>
-                    <label for="adaptive">Адаптивная</label>
-                    <input id="fixed" name="fixed" type="checkbox" value="fixed">
-                    <label for="fixed">Фиксированная</label>
-                    <input id="rubbered" name="rubbered" type="checkbox" value="rubbered" disabled>
-                    <label for="rubbered">Резиновая</label>
-
-                    <h3 class="site-type-features">Особенности:</h3>
-                    <input id="slider" name="slider" type="checkbox" value="slider" checked>
-                    <label for="slider">Слайдер</label>
-                    <input id="advantages" name="advantages" type="checkbox" value="advantages">
-                    <label for="advantages">Блок преимуществ</label>
-                    <input id="news" name="news" type="checkbox" value="news" checked>
-                    <label for="news">Новости</label>
-                    <input id="gallery" name="gallery" type="checkbox" value="gallery">
-                    <label for="gallery">Галерея</label>
-                    <input id="cart" name="cart" type="checkbox" value="cart">
-                    <label for="cart">Корзина</label>
+                    <fieldset class="site-costs">
+                        <legend>Стоимость:</legend>
+                        <input type="range" id="costs" min="0" value="15000" max="20000" step="1000">
+                        <input type="text" id="fromrange" value="0">
+                        <input type="text" id="torange" value="15000">
+                    </fieldset>
+                    <fieldset class="site-type-header">
+                        <legend>Сетка:</legend>
+                        <input id="adaptive" name="adaptive" type="checkbox" value="adaptive" checked>
+                        <label for="adaptive">Адаптивная</label>
+                        <input id="fixed" name="fixed" type="checkbox" value="fixed">
+                        <label for="fixed">Фиксированная</label>
+                        <input id="rubbered" name="rubbered" type="checkbox" value="rubbered" disabled>
+                        <label for="rubbered">Резиновая</label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Особенности:</legend>
+                        <input id="slider" name="slider" type="checkbox" value="slider" checked>
+                        <label for="slider">Слайдер</label>
+                        <input id="advantages" name="advantages" type="checkbox" value="advantages">
+                        <label for="advantages">Блок преимуществ</label>
+                        <input id="news" name="news" type="checkbox" value="news" checked>
+                        <label for="news">Новости</label>
+                        <input id="gallery" name="gallery" type="checkbox" value="gallery">
+                        <label for="gallery">Галерея</label>
+                        <input id="cart" name="cart" type="checkbox" value="cart">
+                        <label for="cart">Корзина</label>
+                    </fieldset>
                     <button class="button button-grey" type="submit">показать</button>
                 </div>
             </form>
         </aside>
         <section class="catalog-list">
-            <h3 class="breadcrumbs-header">Сортировать</h3>
-            <div class="breadcrumbs">
-                <ul class="breadcrumbs-list">
-                    <li class="breadcrumbs-current"><a href="#" class="by-costs">По цене</a></li>
+            <h3 class="catalog-header">Сортировать</h3>
+            <div class="sort-types">
+                <ul class="sort-types-list">
+                    <li class="sort-type-current"><a href="#" class="by-costs">По цене</a></li>
                     <li><a href="#" class="by-costs">По типу</a></li>
                     <li><a href="#" class="by-costs">По названию</a></li>
                 </ul>
-                <ul class="breadcrumbs-arrows">
-                    <li class="breadcrumbs-current-arrow"><a href="#" class="upper-arrow"></a></li>
+                <ul class="sort-type-arrows">
+                    <li class="sort-type-current-arrow"><a href="#" class="upper-arrow"></a></li>
                     <li><a href="#" class="lower-arrow"></a></li>
                 </ul>
             </div>
