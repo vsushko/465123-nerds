@@ -4,36 +4,36 @@
 <head>
     <meta charset="utf-8">
     <title>NЁRDS</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
     <header class="main-header">
-        <div class="main-header-logo">
-            <a href="index.html">
-                <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии Нёрдс">
-            </a>
-        </div>
-        <nav class="main-navigation">
-            <ul class="site-navigation">
-                <li><a href="about.html">Студия</a></li>
-                <li><a href="clients.html">Клиенты</a></li>
-                <li><a href="catalog.html">Магазин</a></li>
-                <li><a href="contacts">Контакты</a></li>
-            </ul>
-            <div class="cart-view">
-                <p class="nav-cart">
-                    <a href="#">
-                        <img src="img/cart-icon.svg" alt="Иконка корзины">
-                        Корзина
-                    </a>
-                </p>
+        <section class="navigation">
+            <div class="main-header-logo">
+                <a href="index.html">
+                    <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии Нёрдс">
+                </a>
             </div>
-        </nav>
-    </header>
-
-    <main class="container">
-        <h1 class="visually-hidden">Дизайн-студия Нёрдс</h1>
+            <nav class="main-navigation">
+                <ul class="site-navigation">
+                    <li><a href="about.html">Студия</a></li>
+                    <li><a href="clients.html">Клиенты</a></li>
+                    <li><a href="catalog.html">Магазин</a></li>
+                    <li><a href="contacts">Контакты</a></li>
+                </ul>
+                <div class="cart-view">
+                    <p class="nav-cart">
+                        <a href="#">
+                            <img src="img/cart-icon.svg" alt="Иконка корзины">
+                            Корзина
+                        </a>
+                    </p>
+                </div>
+            </nav>
+        </section>
         <section class="slider">
             <h2 class="visually-hidden">Слайдер</h2>
             <ul class="slide-navigation">
@@ -62,7 +62,10 @@
                 <input type="radio" id="slide3" name="slide" value="slide3">
             </nav>
         </section>
+    </header>
 
+    <main class="container">
+        <h1 class="visually-hidden">Дизайн-студия Нёрдс</h1>
         <section class="services">
             <h2 class="visually-hidden">Список услуг</h2>
             <ul class="service-list">

@@ -1,12 +1,150 @@
 body {
+    margin: 0;
+    padding: 0;
     font-family: "Roboto", "Arial" sans-serif;
     font-size: 16px;
-    line-height: 1.5;
+    line-height: 24px;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    background: rgb(255, 255, 255);
+}
+
+a {
+    text-decoration: none;
+}
+
+.main-header {
+    font-size: 16px;
+    line-height: 30px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(238, 238, 238);
+}
+
+
+/* Логотип */
+
+.main-header-logo a:hover {
+    opacity: 0.8;
+}
+
+.main-header-logo a:focus, .main-header-logo a:active {
+    opacity: 0.3;
+}
+
+
+/* Навигация */
+
+.site-navigation {
+    list-style: none;
+}
+
+.site-navigation a {
+    color: rgb(0, 0, 0);
+}
+
+.site-navigation a:hover {
+    color: rgb(251, 86, 90);
+}
+
+.site-navigation a:focus {
+    color: rgba(0, 0, 0, 30);
+}
+
+.site-navigation a:active {
+    opacity: 0.3;
+}
+
+.site-navigation-current {
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(251, 86, 90);
+    width: 83px;
+}
+
+.cart-view a {
+    color: rgb(0, 0, 0);
+}
+
+.cart-view a:hover {
+    color: rgb(251, 86, 90);
+}
+
+.cart-view a:focus {
+    color: rgba(0, 0, 0, 30);
+}
+
+.cart-view a:active {
+    opacity: 0.3;
+}
+
+
+/* Слайдер */
+
+.slide-navigation {
+    list-style: none;
+}
+
+.slide-navigation .slide-title {
+    font-size: 55px;
+    line-height: 55px;
+}
+
+.slide-navigation .slide-description {
+    font-size: 16px;
+    line-height: 24px;
     color: rgb(40, 49, 54);
 }
 
+.slide-navigation a {
+    color: rgb(255, 255, 255);
+}
+
+.slide-navigation a:hover {
+    background-color: rgb(231, 86, 90);
+}
+
+.slide-navigation a:focus {
+    background-color: rgb(231, 86, 90);
+}
+
+.slide-navigation a:active {
+    background-color: rgb(215, 55, 59);
+}
+
+
+/* Кнопки */
+
+.button {
+    font: inherit;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    vertical-align: middle;
+    text-transform: uppercase;
+    border: none;
+}
+
+.button-red {
+    background-color: rgb(251, 86, 90);
+}
+
+.button-green {
+    background-color: rgb(0, 202, 116);
+}
+
+.button-yellow {
+    background-color: rgb(239, 200, 74);
+}
+
 .visually-hidden {
-    display: none;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    overflow: hidden;
 }
 
 .main-header-title {
@@ -21,5 +159,4 @@ body {
     color: rgb(0, 0, 0);
     line-height: 1;
     text-align: left;
-  }
-  
+}
