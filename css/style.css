@@ -6,7 +6,6 @@ body {
     line-height: 24px;
     font-weight: 700;
     color: rgb(0, 0, 0);
-    text-transform: uppercase;
     background: rgb(255, 255, 255);
 }
 
@@ -34,6 +33,10 @@ a {
 
 
 /* Навигация */
+
+.navigation {
+    text-transform: uppercase;
+}
 
 .site-navigation {
     list-style: none;
@@ -112,6 +115,115 @@ a {
     background-color: rgb(215, 55, 59);
 }
 
+.slide-navigation li {
+    display: none;
+}
+
+.slide-navigation .slide-navigation-current {
+    display: block;
+}
+
+
+/* Услуги */
+
+.service-list li {
+    list-style: none;
+}
+
+.service-list .service-item-title {
+    font-size: 24px;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+.service-list .service-item-description {
+    font-size: 16px;
+    line-height: 24px;
+    color: rgb(40, 49, 54);
+}
+
+.service-list button {
+    line-height: 18px;
+}
+
+
+/* О нас */
+
+.about-us .who-we-are {
+    font-size: 45px;
+    line-height: 45px;
+}
+
+.about-us .our-principles {
+    font-size: 16px;
+    line-height: 24px;
+    color: rgb(40, 49, 54);
+}
+
+.about-us h4 {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.about-us ul {
+    font-size: 16px;
+    line-height: 18px;
+    color: rgb(40, 49, 54);
+}
+
+.about-us li {
+    list-style: none;
+}
+
+.stats .company-metrics .value {
+    font-size: 45px;
+    line-height: 10px;
+    font-weight: bold;
+}
+
+/* Партнеры */
+.partners li {
+    list-style: none;
+}
+
+/* Карта */
+.company-location .company-name {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: bold;
+}
+
+.company-location .company-address {
+    font-size: 16px;
+    line-height: 18px;
+    color: rgb(102, 102, 102);
+}
+
+.social-logos li {
+    list-style: none;
+}
+
+.social-suggestion .social-suggestion-title {
+    font-size: 36px;
+    line-height: 36px;
+}
+
+.social-suggestion .social-suggestion-benefits {
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.modal-write-us .modal-write-us-title {
+    font-size: 45px;
+    line-height: 45px;
+}
+
+.modal-write-us lable {
+    font-size: 16px;
+    line-height: 218px;
+}
 
 /* Кнопки */
 
@@ -128,12 +240,36 @@ a {
     background-color: rgb(251, 86, 90);
 }
 
+.button-red:hover {
+    background-color: rgb(231, 66, 70);
+}
+
+.button-red:active {
+    background-color: rgb(215, 55, 59);
+}
+
 .button-green {
     background-color: rgb(0, 202, 116);
 }
 
+.button-green:hover {
+    background-color: rgb(0, 188, 108);
+}
+
+.button-green:active {
+    background-color: rgb(0, 170, 98);
+}
+
 .button-yellow {
     background-color: rgb(239, 200, 74);
+}
+
+.button-yellow:hover {
+    background-color: rgb(234, 181, 52);
+}
+
+.button-yellow:active {
+    background-color: rgb(229, 167, 34);
 }
 
 .visually-hidden {
