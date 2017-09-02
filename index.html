@@ -187,9 +187,21 @@
             <h2 class="visually-hidden">Мы в социальных сетях</h2>
             <div class="social-logos">
                 <ul>
-                    <li><a class="social-button" href="#">Вконтакте</a></li>
-                    <li><a class="social-button" href="#">Фейсбук</a></li>
-                    <li><a class="social-button" href="#">Инстаграм</a></li>
+                    <li>
+                        <p class="social-button">
+                            <a href="#"><img src="img/vk-icon.svg" width="25" height="15" alt="Логотип Вконтакте">Вконтакте</a>
+                        </p>
+                    </li>
+                    <li>
+                        <p class="social-button">
+                            <a href="#"><img src="img/fb-icon.svg" width="12" height="22" alt="Логотип Фейсбук">Фейсбук</a>
+                        </p>
+                    </li>
+                    <li>
+                        <p class="social-button">
+                            <a href="#"><img src="img/insta-icon.svg" width="21" height="21" alt="Логотип Инстаграм">Инстаграм</a>
+                        </p>
+                    </li>
                 </ul>
             </div>
             <div class="social-suggestion">
@@ -202,20 +214,22 @@
     <section class="modal modal-write-us">
         <h2 class="modal-write-us-title">Напишите нам</h2>
         <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
-            <p>
+            <p class="write-us-item">
                 <label for="username">Ваше имя:</label>
                 <input id="username" class="username" type="text" name="username" placeholder="Представьтесь, пожалуйста">
             </p>
-            <p>
+            <p class="write-us-item">
                 <label for="email">Ваш e-mail:</label>
                 <input id="email" class="email" type="text" name="email" placeholder="Для отправки ответа">
             </p>
-            <p>
+            <p class="write-us-item">
                 <label for="text">Текст письма:</label>
                 <textarea id="text" name="text" placeholder="В свободной форме"></textarea>
             </p>
-            <button class="button" type="submit">Отправить</button>
-            <button class="modal-close" type="button">x</button>
+            <button class="button button-red" type="submit">Отправить</button>
+            <button class="modal-close" type="button">
+                <img src="img/close-cross.svg">
+            </button>
         </form>
     </section>
 
