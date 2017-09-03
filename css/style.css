@@ -469,6 +469,25 @@ a {
     border-color: rgb(231, 66, 70);
 }
 
+.modal-close {
+    border: 0;
+    padding: 0;
+    background-image: url("../img/close-cross.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 21px;
+    background: transparent;
+    opacity: 0.3;
+}
+
+.modal-close:hover {
+    opacity: 1;
+}
+
+.modal-close:active, .modal-close:focus {
+    opacity: 0.1;
+}
+
 
 /* Кнопки */
 
