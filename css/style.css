@@ -269,12 +269,37 @@ a {
     list-style: none;
 }
 
-.catalog-item img:first-of-type {
-    opacity: 0.12;
+.brower-img-header {
+    width: 360px;
+    height: 40px;
+    background-color: rgba(77, 77, 77, 0.12);
+
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
 }
 
-.catalog-item img:first-of-type:hover {
-    opacity: unset;
+.browser-button {
+    width: 14px;
+    height: 14px;
+    color: black;
+    border: 0;
+    padding: 0;
+    background-size: 14px;
+    background-color: rgb(255, 255, 255);
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 9px;
+    margin-top: 13px;
+}
+
+.browser-button:first-child {
+    margin-left: 16px;
+}
+
+.brower-img-header:hover {
+    background-color: rgba(77, 77, 77, 1);
 }
 
 
