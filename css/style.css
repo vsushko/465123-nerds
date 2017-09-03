@@ -357,29 +357,54 @@ a {
     color: rgb(102, 102, 102);
 }
 
+
+/* Социальные кнопки */
+
 .social-logos li {
     list-style: none;
 }
 
-
-/* Социальные кнопки */
-
-.social-logos p {
-    background-color: rgba(0, 0, 0, 0.3);
+.social-button-vk {
     width: 78px;
     height: 78px;
+    background-size: 26px;
+    background-color: rgba(0, 0, 0, 0.3);
+    background-image: url("../img/vk-icon.svg");
+    background-repeat: no-repeat;
+    background-position: center;
     border-radius: 50%;
+    display: inline-block;
 }
 
-.social-logos a {
-    font-size: 0px;
+.social-button-fb {
+    width: 78px;
+    height: 78px;
+    background-size: 12px;
+    background-color: rgba(0, 0, 0, 0.3);
+    background-image: url("../img/fb-icon.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    display: inline-block;
 }
 
-.social-logos p:hover {
+.social-button-insta {
+    width: 78px;
+    height: 78px;
+    background-size: 21px;
+    background-color: rgba(0, 0, 0, 0.3);
+    background-image: url("../img/insta-icon.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.social-logos a:hover {
     background-color: rgb(231, 66, 70);
 }
 
-.social-logos p:active {
+.social-logos a:active {
     background-color: rgb(215, 55, 59);
 }
 
