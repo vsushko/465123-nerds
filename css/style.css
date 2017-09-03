@@ -206,9 +206,8 @@ a {
     color: rgb(0, 0, 0);
     background-color: rgb(255, 255, 255);
 }
-.pagination-item-current a:hover,
-.pagination-item-current a:focus,
-.pagination-item-current a:active {
+
+.pagination-item-current a:hover, .pagination-item-current a:focus, .pagination-item-current a:active {
     color: rgb(0, 0, 0);
     background-color: rgb(255, 255, 255);
 }
@@ -336,6 +335,13 @@ a {
 
 
 /* Карта */
+
+.company-location {
+    width: 1440px;
+    height: 416px;
+    margin-top: 80px;
+    background-image: url("../img/map.jpg");
+}
 
 .company-location .company-name {
     font-size: 18px;
