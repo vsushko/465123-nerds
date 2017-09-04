@@ -4,44 +4,52 @@
 <head>
     <meta charset="utf-8">
     <title>NЁRDS</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
     <header class="main-header">
-        <div class="main-header-logo">
-            <a href="index.html">
-                <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии Нёрдс">
-            </a>
-        </div>
-        <nav class="main-navigation">
-            <ul class="site-navigation">
-                <li><a href="about.html">Студия</a></li>
-                <li><a href="clients.html">Клиенты</a></li>
-                <li><a href="catalog.html">Магазин</a></li>
-                <li><a href="contacts">Контакты</a></li>
-            </ul>
-           <div class="cart-view">
-                <p class="nav-cart">
-                    <a href="#">Корзина</a>
-                </p>
+        <section class="navigation">
+            <h2 class="visually-hidden">Навигация</h2>
+            <div class="main-header-logo">
+                <a href="index.html">
+                    <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии Нёрдс">
+                </a>
             </div>
-        </nav>
-        <div class="main-header-title">
-            <h1 class="main-header-title-text">Магазин готовых шаблонов</h1>  
-        </div>
+            <nav class="main-navigation">
+                <ul class="site-navigation">
+                    <li><a href="about.html">Студия</a></li>
+                    <li><a href="clients.html">Клиенты</a></li>
+                    <li class="site-navigation-current"><a href="catalog.html">Магазин</a></li>
+                    <li><a href="contacts">Контакты</a></li>
+                </ul>
+                <div class="cart-view">
+                    <p class="nav-cart">
+                        <a href="#">
+                            <img src="img/cart-icon.svg" alt="Иконка корзины">
+                            Корзина
+                        </a>
+                    </p>
+                </div>
+            </nav>
+            <div class="main-header-title">
+                <h1 class="main-header-title-text">Магазин готовых шаблонов</h1>  
+            </div>
+        </section>
     </header>
 
     <main class="container">
-
         <aside class="customize-left-column">
             <form action="https://echo.htmlacademy.ru" method="post" oninput="torange.value = costs.valueAsNumber">
                 <div class="site-type-filters">
                     <fieldset class="site-costs">
                         <legend>Стоимость:</legend>
                         <input type="range" id="costs" min="0" value="15000" max="20000" step="1000">
-                        <input type="text" id="fromrange" value="0">
-                        <input type="text" id="torange" value="15000">
+                        <br>
+                        <span>От</span><input type="text" id="fromrange" value="0">
+                        <span>До</span><input type="text" id="torange" value="15000">
                     </fieldset>
                     <fieldset class="site-type-header">
                         <legend>Сетка:</legend>
@@ -70,22 +78,31 @@
             </form>
         </aside>
         <section class="catalog-list">
-            <h3 class="catalog-header">Сортировать</h3>
+            <h3>Сортировать:</h3>
             <div class="sort-types">
                 <ul class="sort-types-list">
-                    <li class="sort-type-current"><a href="#" class="by-costs">По цене</a></li>
-                    <li><a href="#" class="by-costs">По типу</a></li>
-                    <li><a href="#" class="by-costs">По названию</a></li>
+                    <li class="sort-type-current">По цене</li>
+                    <li><a href="#" class="by-type">По типу</a></li>
+                    <li><a href="#" class="by-name">По названию</a></li>
                 </ul>
                 <ul class="sort-type-arrows">
-                    <li class="sort-type-current-arrow"><a href="#" class="upper-arrow"></a></li>
-                    <li><a href="#" class="lower-arrow"></a></li>
+                    <li class="sort-type-current-arrow">
+                        <img src="img/icon-down-dir.svg" width="11" height="10" alt="По убыванию">
+                    </li>
+                    <li>
+                        <a href="#" class="lower-arrow"><img src="img/icon-up-dir.svg" width="11" height="10" alt="По возрастанию"></a>
+                    </li>
                 </ul>
             </div>
             <ul class="catalog-list-items">
                 <li class="catalog-list-item">
                     <a href="#" class="catalog-item">
                         <figure class="catalog-image">
+                            <div class="brower-img-header">
+                                <span class="browser-button"></span>
+                                <span class="browser-button"></span>
+                                <span class="browser-button"></span>
+                            </div>
                             <img src="img/img-sedona.jpg" width="360" height="567" alt="Sedona">
                         </figure>
                         <div class="catalog-item-bottom-hover">
@@ -98,6 +115,11 @@
                 <li class="catalog-list-item">
                     <a href="#" class="catalog-item">
                         <figure class="catalog-image">
+                            <div class="brower-img-header">
+                                <span class="browser-button"></span>
+                                <span class="browser-button"></span>
+                                <span class="browser-button"></span>
+                            </div>
                             <img src="img/img-pink.jpg" width="360" height="567" alt="Pink App">
                         </figure>
                         <div class="catalog-item-bottom-hover">
@@ -110,6 +132,11 @@
                 <li class="catalog-list-item">
                     <a href="#" class="catalog-item">
                         <figure class="catalog-image">
+                            <div class="brower-img-header">
+                                <span class="browser-button"></span>
+                                <span class="browser-button"></span>
+                                <span class="browser-button"></span>
+                            </div>
                             <img src="img/img-barbershop.jpg" width="360" height="567" alt="Barbershop">
                         </figure>
                         <div class="catalog-item-bottom-hover">
@@ -122,6 +149,11 @@
                 <li class="catalog-list-item">
                     <a href="#" class="catalog-item">
                         <figure class="catalog-image">
+                            <div class="brower-img-header">
+                                <span class="browser-button"></span>
+                                <span class="browser-button"></span>
+                                <span class="browser-button"></span>
+                            </div>
                             <img src="img/img-mishka.jpg" width="360" height="567" alt="Mishka">
                         </figure>
                         <div class="catalog-item-bottom-hover">
@@ -134,6 +166,11 @@
                 <li class="catalog-list-item">
                     <a href="#" class="catalog-item">
                         <figure class="catalog-image">
+                            <div class="brower-img-header">
+                                <span class="browser-button"></span>
+                                <span class="browser-button"></span>
+                                <span class="browser-button"></span>
+                            </div>
                             <img src="img/img-aplus.jpg" width="360" height="567" alt="A Plus">
                         </figure>
                         <div class="catalog-item-bottom-hover">
@@ -146,6 +183,11 @@
                 <li class="catalog-list-item">
                     <a href="#" class="catalog-item">
                         <figure class="catalog-image">
+                            <div class="brower-img-header">
+                                <span class="browser-button"></span>
+                                <span class="browser-button"></span>
+                                <span class="browser-button"></span>
+                            </div>
                             <img src="img/img-kvast.jpg" width="360" height="567" alt="Кваст">
                         </figure>
                         <div class="catalog-item-bottom-hover">
@@ -166,50 +208,39 @@
     </main>
 
     <footer>
-        <section class="company-location">
-            <h2 class="visually-hidden">Где мы находимся</h2>
-            <div class="contacts">
-                <p class="company-name">NЁRDS DESIGN STUDIO</p>
-                <p class="company-address">191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8<br>
-                    <br> тел. +7 (812) 275-75-75
-                </p>
-                <a class="button button-red" href="#">Напишите нам</a>
-            </div>
-            <div class="location-marker">
-                <img src="img/map-marker.png" width="231" height="190" alt="Расположение компании на карте">
-            </div>
-        </section>
         <section class="social-contacts">
-            <h2 class="visually-hidden">Мы в социальных сетях</h2>
-            <ul class="social-logos">
-                <li><a class="social-button" href="#">Вконтакте</a></li>
-                <li><a class="social-button" href="#">Фейсбук</a></li>
-                <li><a class="social-button" href="#">Инстаграм</a></li>
-            </ul>
-            <div class="social-suggestion">
-                <p class="social-suggestion-title">Давайте дружить, это выгодно!</p>
-                <p class="social-suggestion-benefits">Скидка 10% для друзей из социальных сетей.</p>
-            </div>
-        </section>
+                <h2 class="visually-hidden">Мы в социальных сетях</h2>
+                <div class="social-logos">
+                    <ul>
+                        <li><a href="#" class="social-button-vk"></a></li>
+                        <li><a href="#" class="social-button-fb"></a></li>
+                        <li><a href="#" class="social-button-insta"></a></li>
+                    </ul>
+                </div>
+                <div class="social-suggestion">
+                    <p class="social-suggestion-title">Давайте дружить, это выгодно!</p>
+                    <p class="social-suggestion-benefits">Скидка 10% для друзей из социальных сетей.</p>
+                </div>
+            </section>
     </footer>
 
     <section class="modal modal-write-us">
         <h2 class="modal-write-us-title">Напишите нам</h2>
         <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
-            <p>
+            <p class="write-us-item">
                 <label for="username">Ваше имя:</label>
                 <input id="username" class="username" type="text" name="username" placeholder="Представьтесь, пожалуйста">
             </p>
-            <p>
+            <p class="write-us-item">
                 <label for="email">Ваш e-mail:</label>
                 <input id="email" class="email" type="text" name="email" placeholder="Для отправки ответа">
             </p>
-            <p>
+            <p class="write-us-item">
                 <label for="text">Текст письма:</label>
                 <textarea id="text" name="text" placeholder="В свободной форме"></textarea>
             </p>
-            <button class="button" type="submit">Отправить</button>
-            <span class="modal-close">x</span>
+            <button class="button button-red" type="submit">Отправить</button>
+            <button class="modal-close" type="button"></button>
         </form>
     </section>
 

@@ -4,36 +4,37 @@
 <head>
     <meta charset="utf-8">
     <title>NЁRDS</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
     <header class="main-header">
-        <div class="main-header-logo">
-            <a href="index.html">
-                <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии Нёрдс">
-            </a>
-        </div>
-        <nav class="main-navigation">
-            <ul class="site-navigation">
-                <li><a href="about.html">Студия</a></li>
-                <li><a href="clients.html">Клиенты</a></li>
-                <li><a href="catalog.html">Магазин</a></li>
-                <li><a href="contacts">Контакты</a></li>
-            </ul>
-            <div class="cart-view">
-                <p class="nav-cart">
-                    <a href="#">
-                        <img src="img/cart-icon.svg" alt="Иконка корзины">
-                        Корзина
-                    </a>
-                </p>
+        <section class="navigation">
+            <h2 class="visually-hidden">Навигация</h2>
+            <div class="main-header-logo">
+                <a href="index.html">
+                    <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии Нёрдс">
+                </a>
             </div>
-        </nav>
-    </header>
-
-    <main class="container">
-        <h1 class="visually-hidden">Дизайн-студия Нёрдс</h1>
+            <nav class="main-navigation">
+                <ul class="site-navigation">
+                    <li><a href="about.html">Студия</a></li>
+                    <li><a href="clients.html">Клиенты</a></li>
+                    <li><a href="catalog.html">Магазин</a></li>
+                    <li><a href="contacts">Контакты</a></li>
+                </ul>
+                <div class="cart-view">
+                    <p class="nav-cart">
+                        <a href="#">
+                            <img src="img/cart-icon.svg" alt="Иконка корзины">
+                            Корзина
+                        </a>
+                    </p>
+                </div>
+            </nav>
+        </section>
         <section class="slider">
             <h2 class="visually-hidden">Слайдер</h2>
             <ul class="slide-navigation">
@@ -62,7 +63,10 @@
                 <input type="radio" id="slide3" name="slide" value="slide3">
             </nav>
         </section>
+    </header>
 
+    <main class="container">
+        <h1 class="visually-hidden">Дизайн-студия Нёрдс</h1>
         <section class="services">
             <h2 class="visually-hidden">Список услуг</h2>
             <ul class="service-list">
@@ -109,7 +113,7 @@
                 <p class="our-principles">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая
                     рук, как роботы.</p>
                 <h4>Выполняем заказы на разработку:</h4>
-                <ul>
+                <ul class="services-list-names">
                     <li>Веб-сайтов любой сложности</li>
                     <li>Мобильных приложений для iOS и Android</li>
                     <li>Слайдшоу и видео для корпоративных презентаций</li>
@@ -176,22 +180,19 @@
                 </p>
                 <a class="button button-red" href="#">Напишите нам</a>
             </div>
-            <div class="location-marker">
-                <img src="img/map-marker.png" width="231" height="190" alt="Расположение компании на карте">
-            </div>
         </section>
         <section class="social-contacts">
             <h2 class="visually-hidden">Мы в социальных сетях</h2>
             <div class="social-logos">
                 <ul>
-                    <li><a class="social-button" href="#">Вконтакте</a></li>
-                    <li><a class="social-button" href="#">Фейсбук</a></li>
-                    <li><a class="social-button" href="#">Инстаграм</a></li>
+                    <li><a href="#" class="social-button-vk"></a></li>
+                    <li><a href="#" class="social-button-fb"></a></li>
+                    <li><a href="#" class="social-button-insta"></a></li>
                 </ul>
             </div>
             <div class="social-suggestion">
-                <span class="social-suggestion-title">Давайте дружить, это выгодно!</span>
-                 <span class="social-suggestion-benefits">Скидка 10% для друзей из социальных сетей.</span>
+                <p class="social-suggestion-title">Давайте дружить, это выгодно!</p>
+                <p class="social-suggestion-benefits">Скидка 10% для друзей из социальных сетей.</p>
             </div>
         </section>
     </footer>
@@ -199,20 +200,20 @@
     <section class="modal modal-write-us">
         <h2 class="modal-write-us-title">Напишите нам</h2>
         <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
-            <p>
+            <p class="write-us-item">
                 <label for="username">Ваше имя:</label>
                 <input id="username" class="username" type="text" name="username" placeholder="Представьтесь, пожалуйста">
             </p>
-            <p>
+            <p class="write-us-item">
                 <label for="email">Ваш e-mail:</label>
                 <input id="email" class="email" type="text" name="email" placeholder="Для отправки ответа">
             </p>
-            <p>
+            <p class="write-us-item">
                 <label for="text">Текст письма:</label>
                 <textarea id="text" name="text" placeholder="В свободной форме"></textarea>
             </p>
-            <button class="button" type="submit">Отправить</button>
-            <span class="modal-close">x</span>
+            <button class="button button-red" type="submit">Отправить</button>
+            <button class="modal-close" type="button"></button>
         </form>
     </section>
 
