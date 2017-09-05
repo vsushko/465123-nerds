@@ -10,21 +10,23 @@
 </head>
 
 <body>
-    <header class="main-header">
-        <section class="navigation">
-            <h2 class="visually-hidden">Навигация</h2>
-            <div class="main-header-logo">
-                <a href="index.html">
-                    <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии Нёрдс">
-                </a>
-            </div>
-            <nav class="main-navigation">
-                <ul class="site-navigation">
-                    <li><a href="about.html">Студия</a></li>
-                    <li><a href="clients.html">Клиенты</a></li>
-                    <li><a href="catalog.html">Магазин</a></li>
-                    <li><a href="contacts">Контакты</a></li>
-                </ul>
+    <header class="main-header-index">
+        <div class="navigation-wrapper">
+            <section class="navigation">
+                <h2 class="visually-hidden">Навигация</h2>
+                <div class="main-header-logo">
+                    <a href="index.html">
+                        <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии Нёрдс">
+                    </a>
+                </div>
+                <nav class="main-navigation">
+                    <ul class="site-navigation">
+                        <li><a href="about.html">Студия</a></li>
+                        <li><a href="clients.html">Клиенты</a></li>
+                        <li><a href="catalog.html">Магазин</a></li>
+                        <li><a href="contacts">Контакты</a></li>
+                    </ul>
+                </nav>
                 <div class="cart-view">
                     <p class="nav-cart">
                         <a href="#">
@@ -33,36 +35,42 @@
                         </a>
                     </p>
                 </div>
-            </nav>
-        </section>
-        <section class="slider">
-            <h2 class="visually-hidden">Слайдер</h2>
-            <ul class="slide-navigation">
-                <li class="slide-navigation-current">
-                    <img src="img/slide1.png" width="698" height="413" alt="Дизайн">
-                    <p class="slide-title">Долго, дорого,<br>скурпулезно.</p>
-                    <p class="slide-description">Математически выверенный дизайн<br>для вашего сайта или мобильного приложения.</p>
-                    <a class="button button-red" href="#">Узнать больше</a>
-                </li>
-                <li>
-                    <img src="img/slide2.png" width="698" height="413" alt="Точность">
-                    <p class="slide-title">Любим математику<br>как никто другой</p>
-                    <p class="slide-description">Никакого креатива, только математические формулы<br>для расчета идеальных пропорций.</p>
-                    <a class="button button-red" href="#">Узнать больше</a>
-                </li>
-                <li>
-                    <img src="img/slide3.png" width="698" height="413" alt="Доступность">
-                    <p class="slide-title">Только ночь,<br>только хардкор</p>
-                    <p class="slide-description">Работать днем, как все? Мы против этого<br>Ближе к полуночи работа только начинается.</p>
-                    <a class="button button-red" href="#">Узнать больше</a>
-                </li>
-            </ul>
-            <nav>
-                <input type="radio" id="slide1" name="slide" value="slide1" checked>
-                <input type="radio" id="slide2" name="slide" value="slide2">
-                <input type="radio" id="slide3" name="slide" value="slide3">
-            </nav>
-        </section>
+            </section>
+            <section class="slider">
+                <h2 class="visually-hidden">Слайдер</h2>
+                <input type="radio" id="button-1" name="toggle" checked>
+                <input type="radio" id="button-2" name="toggle">
+                <input type="radio" id="button-3" name="toggle">
+                <div class="slider-controls">
+                    <label for="button-1"></label>
+                    <label for="button-2"></label>
+                    <label for="button-3"></label>
+                </div>
+                <div class="slides">
+                    <div class="slide">
+                        <div class="slide-text">
+                            <div class="slide-title" title="Дизайн">Долго, дорого,<br>скрупулезно.</div>
+                            <p>Математически выверенный дизайн<br>для вашего сайта или мобильного приложения.</p>
+                            <a class="button button-red" href="#">Узнать больше</a>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-text">
+                            <div class="slide-title" title="Точность">Любим математику<br>как никто другой</div>
+                            <p>Никакого креатива, только математические формулы<br>для расчета идеальных пропорций.</p>
+                            <a class="button button-red" href="#">Узнать больше</a>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-text">
+                            <div class="slide-title" title="Доступность">Только ночь,<br>только хардкор</div>
+                            <p>Работать днем, как все? Мы против этого<br>Ближе к полуночи работа только начинается.</p>
+                            <a class="button button-red" href="#">Узнать больше</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
     </header>
 
     <main class="container">
@@ -71,36 +79,33 @@
             <h2 class="visually-hidden">Список услуг</h2>
             <ul class="service-list">
                 <li class="service-item">
-                    <p class="service-item-title">Веб-сайты</p>
-                    <p class="service-item-description">Мир никогда не будет прежним
-                                после того как увидит ваш сайт!</p>
                     <p class="service-item-image">
                         <a href="#">
                             <img src="img/illustration-1.png" width="300" height="146" alt="Веб-сайты">
                         </a>
                     </p>
+                    <p class="service-item-title">Веб-сайты</p>
+                    <p class="service-item-description">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
                     <a class="button button-red" href="#">Заказать</a>
                 </li>
                 <li class="service-item">
-                    <p class="service-item-title">Приложения</p>
-                    <p class="service-item-description">Покорите топ-10 приложений в
-                                AppStore и Google Play</p>
                     <p class="service-item-image">
                         <a href="#">
                             <img src="img/illustration-2.png" width="300" height="146" alt="Приложения">
                         </a>
                     </p>
+                    <p class="service-item-title">Приложения</p>
+                    <p class="service-item-description">Покорите топ-10 приложений в AppStore и Google Play</p>
                     <a class="button button-green" href="#">Заказать</a>
                 </li>
                 <li class="service-item">
-                    <p class="service-item-title">Презентации</p>
-                    <p class="service-item-description">Вы даже не подозреваете,
-                            насколько вы изумительны</p>
                     <p class="service-item-image">
                         <a href="#">
                             <img src="img/illustration-3.png" width="300" height="146" alt="Презентации">
                         </a>
                     </p>
+                    <p class="service-item-title">Презентации</p>
+                    <p class="service-item-description">Вы даже не подозреваете, насколько вы изумительны</p>
                     <a class="button button-yellow" href="#">Заказать</a>
                 </li>
             </ul>
@@ -109,7 +114,7 @@
         <section class="about-us">
             <h2 class="visually-hidden">О нас</h2>
             <div class="main-info">
-                <p class="who-we-are">Мы - маленькая, но гордая дизайн-студия из Краснодара.</p>
+                <p class="who-we-are">Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
                 <p class="our-principles">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая
                     рук, как роботы.</p>
                 <h4>Выполняем заказы на разработку:</h4>
@@ -171,32 +176,34 @@
     <footer>
         <section class="company-location">
             <h2 class="visually-hidden">Где мы находимся</h2>
-            <div class="contacts">
-                <p class="company-name">NЁRDS DESIGN STUDIO</p>
-                <p class="company-address">191186, Санкт-Петербург,<br>
-                    ул. Б. Конюшенная, д. 19/8<br>
-                    <br>
-                    тел. +7 (812) 275-75-75
-                </p>
-                <a class="button button-red" href="#">Напишите нам</a>
+            <div class="contacts-wrapper">
+                <div class="contacts">
+                    <p class="company-name">NЁRDS DESIGN STUDIO</p>
+                    <p class="company-address">191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8<br>
+                        <br> тел. +7 (812) 275-75-75
+                    </p>
+                    <a class="button button-red" href="#">Напишите нам</a>
+                </div>
             </div>
         </section>
         <section class="social-contacts">
             <h2 class="visually-hidden">Мы в социальных сетях</h2>
-            <div class="social-logos">
-                <ul>
-                    <li><a href="#" class="social-button-vk"></a></li>
-                    <li><a href="#" class="social-button-fb"></a></li>
-                    <li><a href="#" class="social-button-insta"></a></li>
-                </ul>
-            </div>
-            <div class="social-suggestion">
-                <p class="social-suggestion-title">Давайте дружить, это выгодно!</p>
-                <p class="social-suggestion-benefits">Скидка 10% для друзей из социальных сетей.</p>
+            <div class="social-contacts-wrapper">
+                <div class="social-contacts-container">
+                    <ul class="social-contacts-list">
+                        <li class="social-contact-item"><a href="#" class="social-button-vk"></a></li>
+                        <li class="social-contact-item"><a href="#" class="social-button-fb"></a></li>
+                        <li class="social-contact-item"><a href="#" class="social-button-insta"></a></li>
+                    </ul>
+                </div>
+                <div class="social-suggestion">
+                    <span class="social-suggestion-title">Давайте дружить, это выгодно!</span>
+                    <span class="social-suggestion-benefits">Скидка 10% для друзей из социальных сетей.</span>
+                </div>
             </div>
         </section>
     </footer>
-    
+
     <section class="modal modal-write-us">
         <h2 class="modal-write-us-title">Напишите нам</h2>
         <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
