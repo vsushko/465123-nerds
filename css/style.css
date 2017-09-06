@@ -32,11 +32,6 @@ a {
 
 /* Сеточные стили */
 
-html, body {
-    width: 1440px;
-    margin: auto;
-}
-
 .main-header-index {
     margin-bottom: 80px;
     /* Временно для сетки */
@@ -110,7 +105,6 @@ html, body {
     padding: 0;
     display: flex;
     justify-content: space-between;
-    border: 2px solid black;
 }
 
 .service-list {
