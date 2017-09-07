@@ -208,6 +208,33 @@ a {
 .site-costs {
     margin: 0;
     padding: 0;
+    margin-bottom: 62px;
+}
+
+.site-type-header {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 57px;
+}
+
+.site-type-features {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 48px;
+}
+
+.site-type-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: block;
+}
+
+.site-type-features-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: block;
 }
 
 .customize-left-column {
@@ -572,6 +599,8 @@ a {
 /* Боковая панель каталога */
 
 .site-type-filters {
+    margin: 0;
+    padding: 0;
     font-size: 16px;
     line-height: 20px;
     color: rgb(40, 49, 54);
