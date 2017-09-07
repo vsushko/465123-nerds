@@ -234,7 +234,6 @@ a {
     justify-content: flex-start;
 }
 
-
 .catalog-list {
     width: 760px;
     min-height: 16px;
@@ -277,6 +276,8 @@ a {
     margin: 0;
     padding: 0;
 }
+
+
 /* ------------------------------------------------------------------------------------------------------- */
 
 
@@ -860,7 +861,7 @@ a {
     margin: 0;
     font-size: 36px;
     line-height: 36px;
-    font-weight: bold;    
+    font-weight: bold;
 }
 
 .social-suggestion .social-suggestion-benefits {
