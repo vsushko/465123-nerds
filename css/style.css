@@ -857,12 +857,14 @@ a {
 }
 
 .social-suggestion .social-suggestion-title {
+    margin: 0;
     font-size: 36px;
     line-height: 36px;
-    font-weight: bold;
+    font-weight: bold;    
 }
 
 .social-suggestion .social-suggestion-benefits {
+    margin: 0;
     font-size: 16px;
     line-height: 22px;
 }
