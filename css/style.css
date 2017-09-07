@@ -251,11 +251,12 @@ a {
     margin: 0;
     padding: 0;
     width: 760px;
-    height: 2214px;
+    height: 1913px;
 }
 
 .catalog-list-item {
     width: 360px;
+    height: 616px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -269,10 +270,12 @@ a {
 .sort-types-wrapper {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     margin: 0;
     padding: 0;
+    margin-bottom: 59px;
 }
+
 
 .sort-types {
     display: flex;
@@ -303,6 +306,7 @@ a {
     margin: 0;
     padding: 0;
 }
+
 
 
 /* ------------------------------------------------------------------------------------------------------- */
@@ -497,6 +501,7 @@ a {
 
 .range-filter {
     width: 240px;
+    margin-top: 56px;
 }
 
 .range-controls {
@@ -662,6 +667,8 @@ a {
 /* Сортировка каталога */
 
 .catalog-list h2 {
+    margin: 0;
+    padding: 0;
     font-size: 18px;
     line-height: 18px;
     text-transform: uppercase;
@@ -708,8 +715,16 @@ a {
     opacity: 1;
 }
 
+.sort-type-current-arrow {
+    margin-right: 18px;
+}
 
 /* Каталог */
+
+.catalog-item-bottom-hover {
+    position: absolute;
+    visibility: hidden;
+}
 
 .catalog-list-items {
     list-style: none;
