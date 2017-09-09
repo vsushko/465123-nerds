@@ -151,11 +151,15 @@ body {
 
 .main-info {
     width: 660px;
+    margin-top: 66px;
 }
 
 .stats {
     width: 360px;
+    margin-top: 16px;
 }
+
+.stats h4 {}
 
 .partners-list {
     display: flex;
@@ -641,7 +645,6 @@ body {
     line-height: 24px;
     margin-bottom: 32px;
     color: rgb(40, 49, 54);
-
 }
 
 .service-list button {
@@ -828,10 +831,14 @@ body {
 
 .about-us .who-we-are {
     font-size: 45px;
+    font-weight: 600;
     line-height: 45px;
+    margin: 0;
+    padding: 0;
 }
 
 .about-us .our-principles {
+    margin-top: 33px;
     font-size: 16px;
     line-height: 24px;
     color: rgb(40, 49, 54);
@@ -844,6 +851,15 @@ body {
     text-transform: uppercase;
 }
 
+.stats h4 {
+    margin-top: 30px;
+    margin-left: 17px;
+}
+
+.main-info h4 {
+    margin-top: 39px;
+}
+
 .about-us ul {
     font-size: 16px;
     line-height: 18px;
@@ -852,6 +868,21 @@ body {
 
 .company-metrics {
     list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;    
+    padding: 0;
+    margin-top: 58px;
+}
+
+.company-metrics sup {
+    font-size: 62%;
+}
+
+/* вот тут не знаю что делать */
+.company-metrics li span:nth-child(2) {
+    margin-top: 10px;
 }
 
 .stats .company-metrics .value {
@@ -861,12 +892,27 @@ body {
 }
 
 .services-list-names {
+    margin: 0;
+    padding: 0;
     list-style: none;
 }
 
 .services-list-names li {
+    margin-bottom: 24px;
     font-size: 16px;
     line-height: 24px;
+}
+
+.services-list-names li::before {
+    content: "";
+    float: left;
+    display: block;
+    width: 26px;
+    height: 15px;
+    margin-top: -3px;
+    margin-left: 1px;
+    margin-right: 10px;
+    border-bottom: 2px solid rgb(251, 86, 90);
 }
 
 
@@ -1057,22 +1103,17 @@ body {
     width: 160px;
     height: 50px;
     padding-top: 17px;
-    
-    
     box-sizing: border-box;
     text-align: center;
-
     font: inherit;
     font-size: 16px;
     line-height: 18px;
     text-decoration: none;
-
     color: rgb(255, 255, 255);
     vertical-align: middle;
     text-transform: uppercase;
     border: none;
     border-radius: 3px;
-    
 }
 
 .button-red {
