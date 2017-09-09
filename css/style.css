@@ -15,6 +15,11 @@ a {
     text-decoration: none;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 .main-header-index {
     font-size: 16px;
     line-height: 30px;
@@ -276,7 +281,6 @@ a {
     margin-bottom: 59px;
 }
 
-
 .sort-types {
     display: flex;
     justify-content: space-between;
@@ -337,10 +341,11 @@ a {
 
 .slider-controls {
     position: absolute;
+    /* сделать relative */
     bottom: 95px;
     left: 50%;
-    width: 200px;
-    height: 10px;
+    width: 88px;
+    height: 18px;
     margin-left: -100px;
     text-align: center;
     z-index: 1000;
@@ -390,10 +395,13 @@ a {
 }
 
 .slide .button {
-    display: block;
+    display: inline-block;
     width: 240px;
-    padding: 10px 0;
+    height: 50px;
+    padding: 0 20px;
     margin-top: 25px;
+    line-height: 48px;
+    box-sizing: border-box;
     text-align: center;
     text-decoration: none;
     border-radius: 3px;
@@ -736,6 +744,7 @@ a {
 .sort-type-current-arrow {
     margin-right: 18px;
 }
+
 
 /* Каталог */
 
