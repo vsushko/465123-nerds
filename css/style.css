@@ -8,7 +8,6 @@ body {
     background: rgb(255, 255, 255);
 }
 
-
 /* убрать */
 
 a {
@@ -40,7 +39,7 @@ img {
 .main-header-index {
     margin-bottom: 80px;
     /* Временно для сетки */
-    min-height: 545px;
+    min-height: 544px;
 }
 
 .main-header-catalog {
@@ -91,7 +90,6 @@ img {
     float: left;
     margin-right: 26px;
     margin-top: 8px;
-
     background-image: url("../img/cart-icon.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
@@ -370,18 +368,19 @@ img {
     /* сделать relative */
     bottom: 95px;
     left: 50%;
-    width: 88px;
+    width: 120px;
     height: 18px;
-    margin-left: -100px;
+    margin-left: -65px;
+    margin-bottom: -120px;
     text-align: center;
     z-index: 1000;
 }
 
 .slider-controls label {
     display: inline-block;
-    width: 4px;
-    height: 4px;
-    margin: 0 3px;
+    width: 12px;
+    height: 11px;
+    margin-left: 13px;
     background: white;
     border: 3px solid white;
     vertical-align: top;
@@ -403,10 +402,12 @@ img {
 }
 
 .slide-text {
-    width: 380px;
+    width: 515px;
     height: 413px;
     padding: 30px 0;
     color: rgb(40, 49, 54);
+    padding-top: 78px;
+    font-weight: 500;
 }
 
 .slide-title {
@@ -414,10 +415,11 @@ img {
     line-height: 55px;
 }
 
-.slide-title p {
+.slide-text p {
     font-size: 16px;
     line-height: 24px;
     color: rgb(40, 49, 54);
+    margin-top: 28px;
 }
 
 .slide .button {
@@ -425,7 +427,7 @@ img {
     width: 240px;
     height: 50px;
     padding: 0 20px;
-    margin-top: 25px;
+    margin-top: 24px;
     line-height: 48px;
     box-sizing: border-box;
     text-align: center;
@@ -436,19 +438,22 @@ img {
 .slide:nth-child(1) {
     background-image: url('../img/slide1.png');
     background-repeat: no-repeat;
-    background-position: 100% 10px;
+    background-position-x: 431px;
+    background-position-y: 18px;
 }
 
 .slide:nth-child(2) {
     background-image: url('../img/slide2.png');
     background-repeat: no-repeat;
-    background-position: 100% 10px;
+    background-position-x: 497px;
+    background-position-y: 0px;
 }
 
 .slide:nth-child(3) {
     background-image: url('../img/slide3.png');
     background-repeat: no-repeat;
-    background-position: 100% 10px;
+    background-position-x: 401px;
+    background-position-y: 19px;
 }
 
 .slide {
