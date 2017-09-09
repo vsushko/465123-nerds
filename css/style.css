@@ -52,10 +52,12 @@ img {
 .main-navigation {
     height: 65px;
     background-color: transparent;
+    /*background: rgba(234, 255, 45, 0.2);
+    box-shadow: inset 0 0 0 2px rgb(234, 255, 45);*/
 }
 
 .main-header-logo {
-    width: 160px;
+    width: 435px;
     height: 65px;
 }
 
@@ -64,19 +66,46 @@ img {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     width: 438px;
     margin: 0;
     padding: 0;
     /* временно для сетки */
-    min-height: 65px;
+    height: 65px;
 }
 
 .cart-view {
-    width: 115px;
+    width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
     margin: 0;
     padding: 0;
     /* временно для сетки */
-    min-height: 70px;
+    height: 65px;
+}
+
+.nav-cart::before {
+    content: "";
+    display: block;
+    float: left;
+    margin-right: 26px;
+    margin-top: 8px;
+
+    background-image: url("../img/cart-icon.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    width: 15px;
+    height: 15px;
+}
+
+.header-menu-items {
+    display: flex;
+    justify-content: space-between;
+    height: 16px;
+    margin-top: 8px;
+    width: 960px;
+    font-weight: 600;
 }
 
 
@@ -90,13 +119,10 @@ img {
 
 .navigation {
     display: flex;
-    justify-content: space-between;
     width: 100%;
     margin-bottom: 19px;
     margin: 0;
     padding: 0;
-    /* временно для сетки */
-    min-height: 70px;
 }
 
 .container {
@@ -745,6 +771,7 @@ img {
     margin-right: 18px;
 }
 
+
 /* Каталог */
 
 .catalog-item-bottom-hover {
@@ -1077,22 +1104,17 @@ img {
     background-color: rgb(213, 213, 213, 0.3);
 }
 
-.visually-hidden:not(:focus):not(:active),
-input[type="checkbox"].visually-hidden,
-input[type="radio"].visually-hidden {
-  position: absolute;
-
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-
-  white-space: nowrap;
-
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+.visually-hidden:not(:focus):not(:active), input[type="checkbox"].visually-hidden, input[type="radio"].visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 .main-header-title {
