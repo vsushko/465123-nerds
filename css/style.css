@@ -8,17 +8,6 @@ body {
     background: rgb(255, 255, 255);
 }
 
-/* убрать */
-
-a {
-    text-decoration: none;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-}
-
 .main-header-index {
     font-size: 16px;
     line-height: 30px;
@@ -148,7 +137,6 @@ img {
     width: 300px;
     /* временно для сетки*/
     min-height: 347px;
-    /* вопрос, можно ли решить через justify-content: space-between; ? */
     margin-right: 100px;
 }
 
@@ -498,6 +486,7 @@ img {
     font-size: 16px;
     line-height: 30px;
     color: rgb(0, 0, 0);
+    text-decoration: none;
 }
 
 .site-navigation a:hover {
@@ -523,6 +512,7 @@ img {
     font-size: 16px;
     line-height: 30px;
     color: rgb(0, 0, 0);
+    text-decoration: none;
 }
 
 .cart-view a:hover {
@@ -628,12 +618,20 @@ img {
 
 /* Услуги */
 
+.services {
+    margin-bottom: 80px;
+}
+
 .service-list li {
     list-style: none;
 }
 
 .service-list .service-item-title {
+    margin: 0;
+    margin-top: 14px;
+    padding: 0;
     font-size: 24px;
+    font-weight: bold;
     line-height: 30px;
     text-transform: uppercase;
 }
@@ -641,11 +639,17 @@ img {
 .service-list .service-item-description {
     font-size: 16px;
     line-height: 24px;
+    margin-bottom: 32px;
     color: rgb(40, 49, 54);
+
 }
 
 .service-list button {
     line-height: 18px;
+}
+
+.service-list .service-item-image {
+    font-size: 0;
 }
 
 
@@ -696,6 +700,7 @@ img {
 .pagination-list li:last-child {
     width: 260px;
 }
+
 .pagination-list a {
     color: rgb(0, 0, 0);
     background-color: rgb(238, 238, 238);
@@ -1048,14 +1053,26 @@ img {
 /* Кнопки */
 
 .button {
+    display: inline-block;
+    width: 160px;
+    height: 50px;
+    padding-top: 17px;
+    
+    
+    box-sizing: border-box;
+    text-align: center;
+
     font: inherit;
     font-size: 16px;
     line-height: 18px;
-    text-align: center;
+    text-decoration: none;
+
     color: rgb(255, 255, 255);
     vertical-align: middle;
     text-transform: uppercase;
     border: none;
+    border-radius: 3px;
+    
 }
 
 .button-red {
@@ -1133,4 +1150,8 @@ img {
     color: rgb(0, 0, 0);
     line-height: 1;
     text-align: left;
+}
+
+.section-separator {
+    border: 1px solid rgb(238, 238, 238);
 }
