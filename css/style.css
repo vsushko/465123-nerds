@@ -696,7 +696,6 @@ img {
 .pagination-list li:last-child {
     width: 260px;
 }
-
 .pagination-list a {
     color: rgb(0, 0, 0);
     background-color: rgb(238, 238, 238);
@@ -1119,7 +1118,6 @@ img {
     white-space: nowrap;
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
-    overflow: hidden;
 }
 
 .main-header-title {
