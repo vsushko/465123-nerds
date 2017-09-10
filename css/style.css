@@ -147,6 +147,7 @@ body {
     padding: 0;
     /* временно для сетки*/
     min-height: 409px;
+    margin-bottom: 41px;
 }
 
 .main-info {
@@ -159,14 +160,14 @@ body {
     margin-top: 16px;
 }
 
-.stats h4 {}
-
 .partners-list {
     display: flex;
     justify-content: space-between;
     margin: 0;
     padding: 0;
     min-height: 90px;
+    margin-top: 35px;
+    margin-bottom: 22px;
 }
 
 .partner-item {
@@ -184,9 +185,12 @@ body {
 }
 
 .contacts {
-    width: 319px;
+    position: absolute;
+    width: 269px;
     height: 308px;
     background-color: white;
+    margin-top: 54px;
+    padding-left: 50px;
 }
 
 .social-contacts-wrapper {
@@ -194,7 +198,6 @@ body {
     margin: auto;
     display: flex;
     justify-content: flex-start;
-    align-items: center;
 }
 
 .social-contacts {
@@ -867,28 +870,43 @@ body {
 }
 
 .company-metrics {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;    
+    margin: 0;
     padding: 0;
-    margin-top: 58px;
+}
+
+.company-metrics caption {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 14px;
 }
 
 .company-metrics sup {
     font-size: 62%;
 }
 
+
 /* вот тут не знаю что делать */
+
 .company-metrics li span:nth-child(2) {
     margin-top: 10px;
 }
 
-.stats .company-metrics .value {
+.company-metrics .rate {
+    margin-top: 54px;
+    margin-right: 13px;
     font-size: 45px;
     line-height: 10.06px;
     font-weight: bold;
+}
+
+.company-metrics .description {
+    margin-top: 35px;
+    margin-right: 13px;
+    font-size: 16px;
+    line-height: 21px;
 }
 
 .services-list-names {
@@ -898,7 +916,7 @@ body {
 }
 
 .services-list-names li {
-    margin-bottom: 24px;
+    margin-bottom: 28px;
     font-size: 16px;
     line-height: 24px;
 }
@@ -943,21 +961,30 @@ body {
     margin-top: 80px;
     background-image: url("../img/map.jpg");
     background-repeat: no-repeat;
-    background-position: center;
+    background-position-x: 0px;
+    background-position-y: -152px;
 }
 
 .company-location .company-name {
     font-size: 18px;
     line-height: 30px;
     font-weight: bold;
+    margin-top: 50px;
 }
 
 .company-location .company-address {
     font-size: 16px;
     line-height: 18px;
     color: rgb(102, 102, 102);
+    margin-top: 23px;
+    padding-left: 2px;
 }
 
+.contacts a {
+    width: 219px;
+    height: 50px;
+    margin-top: 20px;
+}
 
 /* Социальные кнопки */
 
@@ -977,7 +1004,7 @@ body {
     width: 78px;
     height: 78px;
     background-size: 26px;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.1);
     background-image: url("../img/vk-icon.svg");
     background-repeat: no-repeat;
     background-position: center;
@@ -989,7 +1016,7 @@ body {
     width: 78px;
     height: 78px;
     background-size: 12px;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.1);
     background-image: url("../img/fb-icon.svg");
     background-repeat: no-repeat;
     background-position: center;
@@ -1001,7 +1028,7 @@ body {
     width: 78px;
     height: 78px;
     background-size: 21px;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.1);
     background-image: url("../img/insta-icon.svg");
     background-repeat: no-repeat;
     background-position: center;
@@ -1011,6 +1038,7 @@ body {
 
 .social-suggestion .social-suggestion-title {
     margin: 0;
+    margin-top: 5px;
     font-size: 36px;
     line-height: 36px;
     font-weight: bold;
@@ -1018,6 +1046,7 @@ body {
 
 .social-suggestion .social-suggestion-benefits {
     margin: 0;
+    margin-top: 11px;
     font-size: 16px;
     line-height: 22px;
 }
