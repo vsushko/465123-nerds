@@ -286,6 +286,10 @@ body {
     justify-content: flex-start;
 }
 
+.catalog-list-item a {
+    text-decoration: none;
+}
+
 .catalog-list {
     width: 760px;
     min-height: 16px;
