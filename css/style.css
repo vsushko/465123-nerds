@@ -119,6 +119,7 @@ body {
 .catalog-container {
     width: 1160px;
     margin: auto;
+    margin-bottom: -21px;
     padding: 0;
     display: flex;
     justify-content: space-between;
@@ -375,7 +376,7 @@ body {
 
 .catalog-list-item {
     width: 360px;
-    height: 616px;
+    height: 576px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -423,19 +424,13 @@ body {
     padding: 0;
 }
 
-.catalog-image {
-    margin: 0;
-    padding: 0;
-}
-
 .pagination-list {
     display: flex;
-    justify-content: space-between;
     margin: 0;
+    margin-top: 60px;
     padding: 0;
     width: 443px;
     height: 50px;
-    margin-top: 60px;
 }
 
 
@@ -802,40 +797,41 @@ body {
 
 .pagination-list {
     font-size: 16px;
-    line-height: 18px;
+    font-weight: bold;
+    line-height: 50px;
     list-style: none;
-}
-
-.pagination-item {
-    width: 50px;
-    height: 50px;
-}
-
-.pagination-list li:last-child {
-    width: 260px;
+    text-transform: uppercase;
+    text-align: center;
 }
 
 .pagination-list a {
-    color: rgb(0, 0, 0);
-    background-color: rgb(238, 238, 238);
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin-right: 11px;    
+    color: #000000;
+    background-color: #eeeeee;
+    border-radius: 2px;
+    text-decoration: none;
 }
 
-.pagination-item a:hover {
-    background-color: rgb(223, 223, 223);
+.pagination-list a:hover, .pagination-list a:focus {
+    background-color: #dfdfdf;
 }
 
-.pagination-item a:focus, .pagination-item a:active {
-    background-color: rgb(213, 213, 213);
+.pagination-list a:active {
+    color: rgba(0, 0, 0, 0.3);
+    background-color: #d5d5d5;
+    box-shadow: inset 0 3px 0 0 #bfbfbf;
+}
+
+.pagination-item-last a {
+    width: 260px;
 }
 
 .pagination-item-current a {
-    color: rgb(0, 0, 0);
-    background-color: rgb(255, 255, 255);
-}
-
-.pagination-item-current a:hover, .pagination-item-current a:focus, .pagination-item-current a:active {
-    color: rgb(0, 0, 0);
-    background-color: rgb(255, 255, 255);
+    background-color: #ffffff;
+    box-shadow: inset 0 0 0 3px #dbdbdb;
 }
 
 
@@ -903,34 +899,71 @@ body {
 
 .catalog-item-bottom-hover {
     position: absolute;
+    bottom: 0;
+    width: 360px;
+    text-align: center;
+    background-color: #eeeeee;
     visibility: hidden;
+}
+
+.catalog-list-item {
+    position: relative;
+    margin-top: 38px;
+    margin-bottom: 35px;
+}
+
+.catalog-list-item::before {
+    position: absolute;
+    top: -39px;
+    width: 360px;
+    height: 40px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    background-image: url("../img/browser.svg");
+    opacity: 0.12;
+    content: "";
+}
+
+.catalog-list-item:hover {
+    box-shadow: 0 6px 15px #cfcfcf;
+}
+
+.catalog-list-item:hover .catalog-item-bottom-hover {
+    visibility: visible;
+}
+
+.catalog-list-item:hover::before {
+    opacity: 1;
+}
+
+.catalog-item-bottom-hover a:first-of-type {
+    display: block;
+    padding-top: 35px;
+    font: inherit;
+}
+
+.catalog-item-bottom-hover p {
+    display: block;
+    width: 239px;
+    margin: auto;
+    margin-top: 20px;
+    line-height: 18px;
+    color: #666666;
+    white-space: pre-wrap;
+}
+
+.catalog-item-bottom-hover .button {
+    width: 200px;
+    margin: 30px auto 43px;
+}
+
+.catalog-item-bottom-hover .button:active {
+    background-color: #d7373b;
+    box-shadow: inset 0 3px 0 0 #c13135;
 }
 
 .catalog-list-items {
     list-style: none;
-}
-
-.brower-img-header {
-    width: 360px;
-    height: 40px;
-    background-color: rgba(77, 77, 77, 0.12);
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
-}
-
-.browser-button {
-    width: 14px;
-    height: 14px;
-    border: 0;
-    padding: 0;
-    background-size: 14px;
-    background-color: rgb(255, 255, 255);
-    background-position: center;
-    background-repeat: no-repeat;
-    border-radius: 50%;
-    display: inline-block;
-    margin-right: 9px;
-    margin-top: 13px;
 }
 
 .browser-button:first-child {
