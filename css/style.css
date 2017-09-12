@@ -878,15 +878,15 @@ body {
     list-style: none;
 }
 
-.sort-type-arrows a {
+.sort-type-arrows .lower-arrow {
     opacity: 0.3;
 }
 
-.sort-type-arrows a:hover {
+.sort-type-arrows .lower-arrow:hover {
     opacity: 0.6;
 }
 
-.sort-type-arrows a:focus {
+.sort-type-arrows .lower-arrow:focus {
     opacity: 1;
 }
 
