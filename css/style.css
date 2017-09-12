@@ -1201,6 +1201,10 @@ body {
 
 /* Модальное окно */
 
+.modal {
+    display: none;
+}
+
 .modal-write-us .modal-write-us-title {
     font-size: 45px;
     line-height: 45px;
