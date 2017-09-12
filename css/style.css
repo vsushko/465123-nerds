@@ -1032,7 +1032,6 @@ body {
     font-size: 62%;
 }
 
-
 /* вот тут не знаю что делать */
 
 .company-metrics li span:nth-child(2) {
@@ -1043,7 +1042,7 @@ body {
     margin-top: 58px;
     margin-right: 13px;
     font-size: 45px;
-    line-height: 10.06px;
+    line-height: 0.224;
     font-weight: bold;
 }
 
