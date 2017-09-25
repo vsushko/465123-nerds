@@ -5,6 +5,11 @@ body {
     font-size: 16px;
     color: rgb(0, 0, 0);
     background: rgb(255, 255, 255);
+    overflow-x: hidden;
+    width: 1160px;
+    margin: auto;
+    padding-right: 20px;
+    padding-left: 20px;
 }
 
 .main-header-index {
@@ -72,7 +77,7 @@ body {
     height: 65px;
 }
 
-.cart-icon::before {
+.nav-cart::before {
     content: "";
     display: block;
     float: left;
@@ -808,7 +813,7 @@ body {
     display: block;
     width: 50px;
     height: 50px;
-    margin-right: 11px;
+    margin-right: 11px;    
     color: #000000;
     background-color: #eeeeee;
     border-radius: 2px;
@@ -878,15 +883,15 @@ body {
     list-style: none;
 }
 
-.sort-type-arrows .lower-arrow {
+.sort-type-arrows a {
     opacity: 0.3;
 }
 
-.sort-type-arrows .lower-arrow:hover {
+.sort-type-arrows a:hover {
     opacity: 0.6;
 }
 
-.sort-type-arrows .lower-arrow:focus {
+.sort-type-arrows a:focus {
     opacity: 1;
 }
 
@@ -1043,7 +1048,7 @@ body {
     margin-top: 58px;
     margin-right: 13px;
     font-size: 45px;
-    line-height: 0.224;
+    line-height: 10.06px;
     font-weight: bold;
 }
 
@@ -1200,10 +1205,6 @@ body {
 
 
 /* Модальное окно */
-
-.modal {
-    display: none;
-}
 
 .modal-write-us .modal-write-us-title {
     font-size: 45px;
